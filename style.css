@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(31, 31, 31);
+    color: cornsilk;
+    font-family: 'Nunito', sans-serif;
+}
+.services-container {
+    background-color: cadetblue;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 85px;
+    justify-content: center;
+}
+#service-rent {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    animation-name: block-1;
+    animation-duration: 2s;
+}
+#service-shoot {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+#service-edit {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+#service-product {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
