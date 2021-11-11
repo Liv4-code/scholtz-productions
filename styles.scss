@@ -20,7 +20,7 @@ body {
     content: "";
     background: url(images/cameraman.jpg) no-repeat center;
     background-size: cover;
-    height: 100%;
+    height: 110vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -33,6 +33,22 @@ body {
 .navbar {
     padding: 20px;
     opacity: 80%;
+}
+
+.home__heading {
+    position: relative;
+    font-size: 92px;
+    color: black;
+    opacity: 100%;
+}
+
+.about-section {
+    text-align: center;
+    position: relative;
+    top: -90px;
+    height: 50vh;
+    background-color: $light;
+    border-radius: 40% 40% 0 0;
 }
 
 .services-container {
