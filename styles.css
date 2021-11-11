@@ -5,24 +5,28 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-nav {
-  position: absolute;
-  background-color: #4b4b4b;
-  display: flex;
-}
-nav h2 {
-  font-family: monospace;
-}
-nav ul {
-  list-style: none;
-  display: flex;
+.home {
+  position: relative;
+  height: 100vh;
 }
 
-.home {
+.home::before {
+  content: "";
   background: url(images/cameraman.jpg) no-repeat center;
   background-size: cover;
-  height: 95vh;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 40%;
+}
+
+.navbar {
+  padding: 20px;
+  opacity: 80%;
 }
 
 .services-container {
