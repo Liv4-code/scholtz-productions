@@ -14,6 +14,17 @@ body {
 .home {
     position: relative;
     height: 100vh;
+    .navbar {
+        padding: 20px;
+        opacity: 80%;
+    }
+    .home__heading {
+        position: relative;
+        text-align: center;
+        font-size: 92px;
+        color: black;
+        opacity: 100%;
+    }
 }
 
 .home::before {
@@ -27,19 +38,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 40%;
-}
-
-.navbar {
-    padding: 20px;
-    opacity: 80%;
-}
-
-.home__heading {
-    position: relative;
-    font-size: 92px;
-    color: black;
-    opacity: 100%;
+    opacity: 50%;
 }
 
 .about-section {
@@ -49,6 +48,19 @@ body {
     height: 50vh;
     background-color: $light;
     border-radius: 40% 40% 0 0;
+    h2 {
+        padding: 30px 0 10px 0;
+        .underline {
+            margin: auto;
+            opacity: 20%;
+            padding-top: 20px;
+        }
+    }
+    p {
+        margin: auto;
+        padding-top: 30px;
+        width: 65%;
+    }
 }
 
 .services-container {
