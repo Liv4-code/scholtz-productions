@@ -2,7 +2,10 @@ body {
   margin: 0;
   background-color: #2f2f2f;
   color: cornsilk;
-  font-family: "Nunito", sans-serif;
+}
+
+main {
+  background-color: #2f2f2f;
 }
 
 .home {
@@ -47,16 +50,10 @@ body {
   top: -90px;
   height: 70vh;
   background-color: #fafafa;
-  border-radius: 40% 40% 40% 40%;
-  transform: scaleX(1.1);
+  border-radius: 50% 50% 50% 50%;
 }
 .about-section h2 {
   padding: 30px 0 10px 0;
-}
-.about-section h2 .underline {
-  margin: auto;
-  opacity: 20%;
-  padding-top: 20px;
 }
 .about-section p {
   margin: auto;
@@ -64,42 +61,32 @@ body {
   width: 65%;
 }
 
-.services-container {
+.icon {
+  margin: auto;
+  opacity: 20%;
+  padding-top: 20px;
+}
+
+.service-section {
   background-color: #d8d82a;
+  height: 80vh;
+}
+.service-section h2 {
+  text-align: center;
+}
+.service-section .services-container {
   width: 100%;
-  height: 300px;
+  height: inherit;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: repeat(4, 200px);
   grid-gap: 85px;
   justify-content: center;
+  align-items: center;
 }
-
-#service-rent {
+.service-section .services-container div {
   background-color: whitesmoke;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 40%;
   align-self: center;
-  animation-name: block-1;
-  animation-duration: 2s;
-}
-
-#service-shoot {
-  background-color: whitesmoke;
-  width: 200px;
-  height: 200px;
-  align-self: center;
-}
-
-#service-edit {
-  background-color: whitesmoke;
-  width: 200px;
-  height: 200px;
-  align-self: center;
-}
-
-#service-product {
-  background-color: whitesmoke;
-  width: 200px;
-  height: 200px;
-  align-self: center;
+  border-radius: 10px;
 }
