@@ -43,7 +43,7 @@ body {
 
 .smoke-effect {
   background-color: black;
-  height: 110vh;
+  height: 120vh;
 }
 
 .about-section {
@@ -53,11 +53,13 @@ body {
 .about-content {
   text-align: center;
   position: relative;
-  top: -90px;
-  height: 70vh;
+  padding: 10% 10% 30% 10%;
+  top: -80px;
+  height: -webkit-min-content;
+  height: min-content;
   background-color: #fafafa;
   border-radius: 50% 50% 50% 50%;
-  transform: scaleX(1.1);
+  transform: scaleX(1.28);
 }
 .about-content h2 {
   padding: 30px 0 10px 0;
