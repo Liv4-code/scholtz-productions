@@ -48,6 +48,7 @@ body {
 
 .about-section {
   overflow-x: clip;
+  background-color: #eeeea1;
 }
 
 .about-content {
@@ -69,33 +70,40 @@ body {
   padding-top: 30px;
   width: 65%;
 }
-
-.icon {
+.about-content .icon {
   margin: auto;
   opacity: 20%;
   padding-top: 20px;
 }
 
 .services {
-  background-color: #d8d82a;
-  height: 90vh;
+  background-color: #eeeea1;
+  height: 115vh;
 }
 .services h2 {
   text-align: center;
 }
-.services .services-container {
-  width: 100%;
-  height: inherit;
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-gap: 85px;
-  justify-content: center;
-  align-items: center;
+.services .icon {
+  text-align: center;
+  opacity: 30%;
+  padding: 20px 0 20px 0;
 }
-.services .services-container div {
+.services .services-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 230px);
+  grid-column-gap: 5%;
+  justify-content: center;
+}
+
+.services-container__offering {
+  display: flex;
+  justify-content: center;
   background-color: whitesmoke;
   width: 100%;
-  height: 40%;
+  height: 80%;
   align-self: center;
   border-radius: 10px;
 }
@@ -106,4 +114,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
 }

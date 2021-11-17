@@ -2,7 +2,7 @@
 
 $light: rgb(250, 250, 250);
 $dark: rgb(47, 47, 47);
-$yellow: rgb(216, 216, 42);
+$yellow: rgb(238, 238, 161);
 
 // tools
 
@@ -71,6 +71,7 @@ body {
 
 .about-section {
     overflow-x: clip;
+    background-color: $yellow;
 }
 
 .about-content {
@@ -90,38 +91,45 @@ body {
         padding-top: 30px;
         width: 65%;
     }
-}
-
-.icon {
-    margin: auto;
-    opacity: 20%;
-    padding-top: 20px;
+    .icon {
+        margin: auto;
+        opacity: 20%;
+        padding-top: 20px;
+    }
 }
 
 // SERVICES SECTION
 
 .services {
     background-color: $yellow;
-    height: 90vh;
+    height: 115vh;
     h2 {
         text-align: center;
     }
-    .services-container {
-        width: 100%;
-        height: inherit;
-        display: grid;
-        grid-template-columns: repeat(4, 200px);
-        grid-gap: 85px;
-        justify-content: center;
-        align-items: center;
-        div {
-            background-color: whitesmoke;
-            width: 100%;
-            height: 40%;
-            align-self: center;
-            border-radius: 10px;
-        }
+    .icon {
+        text-align: center;
+        opacity: 30%;
+        padding: 20px 0 20px 0;
     }
+    .services-container {
+        margin-top: 30px;
+        width: 100%;
+        height: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 230px);
+        grid-column-gap: 5%;
+        justify-content: center;
+    }
+}
+
+.services-container__offering {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 80%;
+    align-self: center;
+    border-radius: 10px;
 }
 
 // CONTACT SECTION
@@ -129,4 +137,12 @@ body {
 .contact {
     height: 40vh;
     @include flex;
+}
+
+// media queries
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
 }
