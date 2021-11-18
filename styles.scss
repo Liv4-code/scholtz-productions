@@ -3,6 +3,7 @@
 $light: rgb(250, 250, 250);
 $dark: rgb(47, 47, 47);
 $yellow: rgb(238, 238, 161);
+$sunset: rgb(200, 161, 134);
 
 // tools
 
@@ -27,7 +28,7 @@ body {
 
 .home {
     position: relative;
-    height: 100vh;
+    height: 115vh;
     .navbar {
         padding: 20px;
         opacity: 70%;
@@ -44,6 +45,9 @@ body {
         font-size: 40px;
         word-spacing: 10px;
         color: $light;
+    }
+    svg {
+        text-align: center;
     }
 }
 
@@ -66,18 +70,17 @@ body {
 
 .about-section {
     overflow-x: clip;
-    background-color: $yellow;
+    background-color: $sunset;
 }
 
 .about-content {
     text-align: center;
     position: relative;
     padding: 10% 10% 30% 10%;
-    top: -80px;
     height: min-content;
     background-color: $light;
     border-radius: 50% 50% 50% 50%;
-    transform: scaleX(1.28);
+    transform: scaleX(1.28) translate(0, -20%);
     h2 {
         padding: 30px 0 10px 0;
     }
@@ -96,22 +99,22 @@ body {
 // SERVICES SECTION
 
 .services {
-    background-color: $yellow;
+    background-color: $sunset;
     height: 115vh;
     h2 {
         text-align: center;
     }
     .icon {
         text-align: center;
-        opacity: 30%;
+        opacity: 50%;
         padding: 20px 0 20px 0;
     }
     .services-container {
         margin-top: 30px;
         width: 100%;
-        height: 60%;
+        height: 65%;
         display: grid;
-        grid-template-columns: repeat(2, 230px);
+        grid-template-columns: repeat(2, 260px);
         grid-column-gap: 5%;
         justify-content: center;
     }
@@ -120,18 +123,33 @@ body {
 .services-container__offering {
     display: flex;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: $light;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 25px 0px,
+        rgba(0, 0, 0, 0.4) 0px 0px 1px 0px;
     width: 100%;
     height: 80%;
-    align-self: center;
     border-radius: 10px;
+}
+
+.services-container__offering:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.5) 0px 0px 1px 0px;
 }
 
 // CONTACT SECTION
 
 .contact {
+    background-color: $dark;
+    color: $light;
     height: 40vh;
     @include flex;
+    cite {
+        background-color: $light;
+        color: $dark;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
 }
 
 // media queries

@@ -6,7 +6,7 @@ body {
 
 .home {
   position: relative;
-  height: 100vh;
+  height: 115vh;
 }
 .home .navbar {
   padding: 20px;
@@ -24,6 +24,9 @@ body {
   font-size: 40px;
   word-spacing: 10px;
   color: #fafafa;
+}
+.home svg {
+  text-align: center;
 }
 
 .home::before {
@@ -43,19 +46,18 @@ body {
 
 .about-section {
   overflow-x: clip;
-  background-color: #eeeea1;
+  background-color: #c8a186;
 }
 
 .about-content {
   text-align: center;
   position: relative;
   padding: 10% 10% 30% 10%;
-  top: -80px;
   height: -webkit-min-content;
   height: min-content;
   background-color: #fafafa;
   border-radius: 50% 50% 50% 50%;
-  transform: scaleX(1.28);
+  transform: scaleX(1.28) translate(0, -20%);
 }
 .about-content h2 {
   padding: 30px 0 10px 0;
@@ -72,7 +74,7 @@ body {
 }
 
 .services {
-  background-color: #eeeea1;
+  background-color: #c8a186;
   height: 115vh;
 }
 .services h2 {
@@ -80,15 +82,15 @@ body {
 }
 .services .icon {
   text-align: center;
-  opacity: 30%;
+  opacity: 50%;
   padding: 20px 0 20px 0;
 }
 .services .services-container {
   margin-top: 30px;
   width: 100%;
-  height: 60%;
+  height: 65%;
   display: grid;
-  grid-template-columns: repeat(2, 230px);
+  grid-template-columns: repeat(2, 260px);
   grid-column-gap: 5%;
   justify-content: center;
 }
@@ -96,19 +98,32 @@ body {
 .services-container__offering {
   display: flex;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 25px 0px, rgba(0, 0, 0, 0.4) 0px 0px 1px 0px;
   width: 100%;
   height: 80%;
-  align-self: center;
   border-radius: 10px;
 }
 
+.services-container__offering:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px, rgba(0, 0, 0, 0.5) 0px 0px 1px 0px;
+}
+
 .contact {
+  background-color: #2f2f2f;
+  color: #fafafa;
   height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.contact cite {
+  background-color: #fafafa;
+  color: #2f2f2f;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
