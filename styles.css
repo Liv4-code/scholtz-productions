@@ -1,7 +1,7 @@
 body {
+  font-family: "Bebas Neue", cursive !important;
   margin: 0;
   background-color: #2f2f2f;
-  color: cornsilk;
 }
 
 .home {
@@ -20,8 +20,7 @@ body {
   position: relative;
   height: 70%;
   text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 40px;
+  font-size: 70px;
   word-spacing: 10px;
   color: #fafafa;
 }
@@ -51,10 +50,7 @@ body {
 
 .about-content {
   text-align: center;
-  position: relative;
-  padding: 10% 10% 30% 10%;
-  height: -webkit-min-content;
-  height: min-content;
+  padding: 10% 10% 10% 10%;
   background-color: #fafafa;
   border-radius: 50% 50% 50% 50%;
   transform: scaleX(1.28) translate(0, -20%);
@@ -64,7 +60,7 @@ body {
 }
 .about-content p {
   margin: auto;
-  padding-top: 30px;
+  padding: 10% 0 15% 0;
   width: 65%;
 }
 .about-content .icon {
@@ -79,6 +75,7 @@ body {
 }
 .services h2 {
   text-align: center;
+  font-size: 42px;
 }
 .services .icon {
   text-align: center;
@@ -101,13 +98,14 @@ body {
   align-items: flex-end;
   background-color: #fafafa;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 25px 0px, rgba(0, 0, 0, 0.4) 0px 0px 1px 0px;
+  border: 6px solid burlywood;
   width: 100%;
   height: 80%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .services-container__offering div {
   margin-bottom: 10px;
-  border: 1px solid #2f2f2f;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 10px;
   padding: 10px;
 }
@@ -125,10 +123,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.contact h2 {
-  margin: 25px;
+.contact h3 {
+  margin: 35px;
 }
 .contact .contact-info {
+  margin-top: 2%;
   height: 400%;
   text-align: center;
   font-size: 14px;
