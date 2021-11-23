@@ -156,21 +156,29 @@ body {
     background-color: $dark;
     color: $light;
     height: 50vh;
-    @include flex;
+    display: grid;
+    grid-template-areas:
+        "heading"
+        "contact" "contact"
+        "cite";
     h3 {
         margin: 35px;
+        grid-area: heading;
     }
     .contact-info {
+        grid-area: contact;
         margin-top: 2%;
-        height: 400%;
+        height: 100%;
         text-align: center;
         font-size: 1.3em;
     }
     #map {
-        height: 400px;
+        grid-area: contact;
+        height: 150px;
         width: 20%;
     }
     cite {
+        grid-area: cite;
         background-color: $light;
         color: $dark;
         padding-top: 15px;
